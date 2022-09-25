@@ -1,0 +1,367 @@
+* { /*zerando css user agent e add configs gerais*/
+    margin: 0;
+    padding: 0;
+    color: #837E9F;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    text-decoration: none; /* remove o _ dos links*/
+}
+
+.container{
+    display: flex;
+    padding: 40px;
+}
+body {
+    background-color: #22212C;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+/* DIV 1 - PHOTO / NAME / OCCUPATION */
+
+.profile{
+    display: flex;
+    flex-direction: column;
+}
+
+.photo img { 
+    width: 128px;
+    border-radius: 50%;
+    border: 3px solid #00FF00;
+}
+
+.photo{
+    display: flex;
+    flex-direction: column;
+    background-color: #302F3D;
+    width: 348px;
+    height: 292px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.name{
+    font-weight: 700;
+    font-size: 23px;
+    padding: 30px 0px 10px 0px;
+}
+
+.occupation{
+    font-weight: 300;
+    font-size: 13px;
+}
+
+/* DIV 2 - SOCIAL */
+
+.social{
+    background-color: #302F3D;
+    width: 348px;
+    height: 348px;
+    border-radius: 20px;
+    margin-top: 47px;
+}
+
+.socials{
+    font-size: 12px;
+    font-weight: 400px;
+    padding-left: 50px;
+}
+
+.socials div{
+    display: flex;
+    padding: 15px 40px 3px;    
+}
+
+.socials svg{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+}
+
+.socials p{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.technologies{
+    background-color: #302F3D;
+    width: 348px;
+    height: 208px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.title-techs{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 30px 0px 0px 20px;
+}
+
+.techs{
+    display: grid; /*criar colunas*/
+    grid-template-columns: 1fr 1fr 1fr; /*espaço entre eles auto ajustavel*/
+    margin: 20px 30px 30px 30px;
+}
+
+.languages{
+    display: flex;
+    background-color: #CB92B1;
+    margin: 5px; /*margem entre as lgn*/
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 24px;
+    font-weight: 700;
+    font-size: 10px;
+    border-radius: 30px;
+    padding: 2px 8px;
+    color: black;
+}
+
+/* DIV 4 - EXPERIENCIAS  */
+
+.experiences{
+    background-color: #302F3D;
+    width: 348px;
+    height: 349px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.title-xps{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 30px 0px 0px 20px;
+}
+
+.xps{
+    width: 200px;
+    height: 243px;
+    margin: 20px 0px 30px 70px;
+}
+
+li{
+    font-size: 15px;
+    font-weight: 500px;
+}
+
+ul{
+    margin-top: 20px;
+}
+
+.cargo{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/* DIV 5 - Education */
+/* * {border: 1px solid red;} */
+.education{
+    background-color: #302F3D;
+    width: 348px;
+    height: 352px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.title-edu{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 30px 0px 0px 20px;
+}
+
+.educs{
+    width: 175px;
+    height: 246px;
+    margin: 20px 0px 30px 70px;
+}
+
+.duration{
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.curse{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* PROJETOS */
+/* * {border: 1px solid red;} */
+.space{
+    display: flex;
+    width: 80px;
+}
+
+.projects{
+    width: 100%;
+    min-width: 500px;
+}
+
+
+.my-projects{
+    background-color: #302F3D;
+    width: 100%;
+    height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    padding: 34px 10px 34px 30px; 
+}
+
+.my-projects :nth-child(1){
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.my-projects :nth-child(2){
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* DIV PROJECTS */
+
+.projects section { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+section #project-1{
+    background-color: #302F3D;
+    border-radius: 20px;
+    width: 99%;
+    height: 186px;
+    padding: 30px 0px 30px 0px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-1-project{
+    display: grid;
+    grid-template-rows: 1fr 1fr; /*linha do nome da pasta e descrição*/
+}
+
+.icon-project{
+    display: flex;
+    padding-left: 20px;
+}
+
+.icon-project svg {
+    width: 20px;
+    height: 20px;
+}
+
+.project-title{
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.description-project{
+    width: 415px;
+    height: 50px;
+    padding: 0px 0 5px 20px;
+    font-size: 14px;
+}
+
+.container-techs-project{
+    display: flex;
+}
+
+
+.box-2-project{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 10px 20px 20px;
+}
+
+.language-project{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.container-techs-project p{
+    font-size: 14px;
+    padding-left: 8px;
+    font-weight: 300;
+    justify-content: center;
+}
+
+.branch-icon svg{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+.title-recent-posts{
+    margin-top: 30px;
+    background-color: #302F3D;
+    width: 100%;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 30px 0px 30px 0px;
+}
+
+.title-recent-posts p{
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 30px;
+}
+
+#post-1 {
+  background-color: #302F3D;
+  border-radius: 20px;
+  width: 100%;
+  height: 200px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 32px 0 32px 0px;
+  margin-top: 32px;
+  display: flex;
+}
+
+#post-1 img{
+    margin-left: 30px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.box-1-post{
+    display: grid;
+    padding-left: 20px;
+    width: 100%;
+    grid-row: 1fr 1fr 1fr 1fr;
+}
+
+.title-post{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.date-post{
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 25px;
+}
+
+.post-description{
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+.post-tags{
+    font-size: 14px;
+    display: flex;
+    gap: 10px;
+    font-weight: 300;
+}
